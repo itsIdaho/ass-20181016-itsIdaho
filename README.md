@@ -2,11 +2,12 @@
 assignment C functions
 
 Aufgabe zur Uebung der Erstellung von Funktionen ...
-Aufgabe zur Uebung der Verwendung der Math library ...
 
 Erstellen Sie zuerst ein Textdocument, in dem Sie die benoetigten Rechenwege erlaeutern.
 
 Ueberlegen Sie Sich dann, wie Sie dies implementieren koennen.
+
+Definieren Sie sich benoetigte Konstanten!
 
 Zuletzt erstellen Sie ein programm, welches die Funktionen implementiert und einen kurzen 
 Test fuer jede Funktion durchfuehrt. 
