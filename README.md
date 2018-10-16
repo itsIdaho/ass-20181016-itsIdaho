@@ -20,9 +20,9 @@ Test fuer jede Funktion durchfuehrt.
   * RectTriangleArea(a,b) welche die Flaeche eines rechtwinkligen Dreiecks returniert.
   * RectTriangleCirc(a,b) welche den Umfang eines rechtwinkligen Dreiecks returniert.
   * CircleArea(r) welches die Flaeche eines Kreises returniert.
-  * CireleCir(r) welches den Umfang eines Kreisringes returniert.
+  * CircleCir(r) welches den Umfang eines Kreises returniert.
   * RingArea(r1,r2) welches die Flaeche eines Kreisringes returniert.
-  * RingCir(r1,r2) welches den Umfang eines Kreises returniert.
+  * RingCir(r1,r2) welches den Umfang eines Kreisringes returniert.
   * Current(U,U) welches den Strom eines mit U belasteten Widerstands R returniert.
   * Ps2KW(ps) welches die ps in kw umrechnet.
   * Kw2PS(kw) welches die kw in ps umrechnet.
