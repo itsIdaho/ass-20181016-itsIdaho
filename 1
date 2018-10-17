@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+	double SquareArea(double a){
+	return a*a;
+} 
+
+    	double SquareCirc(double a){
+
+    	return 4.0*a;
+
+}
+
+	double RectArea(double a,double b){
+	return a*b;
+}
+
+	double RectCirc(double a,double b){
+	return 2*a+2*b; /* a+a+b+b Compiler kennt KlamPunStri Regeln*/
+}
+
+	double RectTriangleArea(double a, double b){
+	return
+}
+
+
+int main(int argc, char ** argv) {
+
+	printf ("A square with a=%f has an area of %f\n",2,SquareArea(2.0));
+
+	printf ("A square with a=%f has a circumference of %f\n",2,SquareCirc(2.0));
+
+
+	printf ("A rectangle with a=%f and b=%f has an area of %f\n",2.0,2.0, RectArea(2.0));
+
+
+	printf ("A rectangle with a=%f and b=%f has a circumference of %f\n",2.0,2.0, RectCirc(2.0));
+
+
+	printf ("A triangle with a=%f and b=%f has an area of %f\n",2.0,2.0, RectTriangleArea(2.0));
+
+
+
+
+return 0;
+}
