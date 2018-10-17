@@ -1,45 +1,113 @@
 #include <stdio.h>
 
-	double SquareArea(double a){
-	return a*a;
-} 
-
-    	double SquareCirc(double a){
-
-    	return 4.0*a;
-
+double SquareArea (double a)
+{
+  return a * a;
 }
 
-	double RectArea(double a,double b){
-	return a*b;
+double SquareCirc (double a)
+{
+  return 4.0 * a;
 }
 
-	double RectCirc(double a,double b){
-	return 2*a+2*b; /* a+a+b+b Compiler kennt KlamPunStri Regeln*/
+double RectArea (double a, double b)
+{
+  return a * b;
 }
 
-	double RectTriangleArea(double a, double b){
-	return
+double RectCirc (double a, double b)
+{
+  return 2 * a + 2 * b;		/* a+a+b+b, Compiler kennt KlamPunStri Regeln */
+}
+
+double RectTriangleArea (double a, double b)
+{
+  return a * b / 2;
+}
+
+double RectTriangleCirc (double a, double b)
+{
+  double c = sqrt (pow (a, 2) + pow (b, 2));
+  return a + b + c;
+}
+
+double CircleArea (double r)
+{
+  return 3.14159 * r * r;
+}
+
+double CircleCirc (double r)
+{
+  return 2.0 * 3.14159 * r;
+}
+
+double RingArea (double r1, double r2)
+{
+  return 3.14159 * (r1 * r1 - r2 * r2);
+}
+
+double RingCirc (double r1, double r2)
+{
+  return (2.0 * r1 * 3.14159) + (2.0 * r2 * 3.14159);
+}
+
+double Current (double U, double R)
+{
+  return (U / R) * 1000;
+}
+
+double Ps2KW (double ps)
+{
+  return ps / 1.36;
+}
+
+double
+KW2PS (double kw)
+{
+  return kw * 1.36;
 }
 
 
-int main(int argc, char ** argv) {
 
-	printf ("A square with a=%f has an area of %f\n",2,SquareArea(2.0));
+int
+main (int argc, char **argv)
+{
 
-	printf ("A square with a=%f has a circumference of %f\n",2,SquareCirc(2.0));
+  printf ("A square with a=%f has an area of %f\n", 2, SquareArea(2.0));
 
+  printf ("A square with a=%f has a circumference of %f\n", 2, SquareCirc(2.0));
+  
+  printf ("A rectangle with a=%f and b=%f has an area of %f\n", 2.0, 2.0, RectArea(2.0));
 
-	printf ("A rectangle with a=%f and b=%f has an area of %f\n",2.0,2.0, RectArea(2.0));
+  printf ("A rectangle with a=%f and b=%f has a circumference of %f\n", 2.0, 2.0, RectCirc(2.0));
 
+  printf ("A triangle with a=%f and b=%f has an area of %f\n", 2.0, 2.0, RectTriangleArea(2.0));
 
-	printf ("A rectangle with a=%f and b=%f has a circumference of %f\n",2.0,2.0, RectCirc(2.0));
+  printf ("SquareArea from %f is %f\n", 2.0, SquareArea(2.0));
 
+  printf ("SquareCirc from %f is %f\n", 2.0, SquareCirc(2.0));
 
-	printf ("A triangle with a=%f and b=%f has an area of %f\n",2.0,2.0, RectTriangleArea(2.0));
+  printf ("RectArea from %f and %f is %f\n", 2.0, 4.0, RectArea (2.0, 4.0));
 
+  printf ("RectCirc from %f and %f is %f\n", 2.0, 4.0, RectCirc (2.0, 4.0));
 
+  printf ("RectTriangleArea from %f and %f is %f\n", 2.0, 4.0, RectTriangleArea (2.0, 4.0));
 
+  printf ("RectTriangleCirc from %f and %f is %f\n", 2.0, 4.0, RectTriangleCirc (2.0, 4.0));
 
-return 0;
+  printf ("CircleArea from %f is %f\n", 4.0, CircleArea (4.0));
+
+  printf ("CircleCir from %f is %f\n", 4.0, CircleCirc (4.0));
+
+  printf ("RingArea from %f and %f is %f\n", 8.0, 4.0, RingArea (8.0, 4.0));
+
+  printf ("RingCir from %f and %f is %f\n", 8.0, 4.0, RingCirc (8.0, 4.0));
+
+  printf ("Current U=%f V and R=%f Ohm is %f mA\n", 5.0, 50.0, Current (5.0, 50.0));
+
+  printf ("Ps2KW %f PS is %f kW\n", 107.00, Ps2KW (107.0));
+
+  printf ("KW2Ps %f kW is %f PS\n", 79.0, KW2PS (79.0));
+
+  return 0;
 }
